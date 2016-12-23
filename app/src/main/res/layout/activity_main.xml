@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dgknrsln.conquerthemiddle.MainActivity"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Conquer The Middle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/textView"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="normal|bold"
+            android:textSize="36sp"
+            android:fontFamily="casual"
+            android:textAlignment="center" />
+
+        <Button
+            android:text="New Game"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/button"
+           android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:onClick="newGame"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@android:color/holo_blue_bright" />
+
+        <Button
+            android:text="Instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:onClick="instructions"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@android:color/holo_blue_bright" />
+
+        <Button
+            android:text="Credits"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/button6"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:onClick="newGame"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
